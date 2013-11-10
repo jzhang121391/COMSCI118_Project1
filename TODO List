@@ -1,0 +1,30 @@
+TODO list:
+(x means done)
+
+Proxy:
+-Listening
+--Listen on incoming connections 		x
+--Spawn new process              		x
+--Limit number of processes
+--read data from client			
+--check if request if properly formatted	
+--invalid requests should have error code	
+
+-Parse URL
+--parse the requested URL
+
+-Send Data to requested host
+--first establish a connection
+--send header
+--make sure connection is closed (also in header)
+
+-Receive Data from host
+
+-Send Data back to client
+
+Client:
+-connect to HTTP proxy
+
+-take the URL and convert it to an HTTP request
+
+-reply should be saved in current-news file
